@@ -1,0 +1,84 @@
+name: Build Pip-Boy Desktop Environment
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Build and package application
+      run: npx electron-forge make
+    
+    - name: Upload Windows installer
+      uses: actions/upload-artifact@v3
+      with:
+        name: windows-installer
+        path: out/make/squirrel.windows/x64/*.exe
+        if-no-files-found: error
+
+  build-mac:
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm install
+    
+    - name: Build and package application
+      run: npx electron-forge make --platform=darwin
+    
+    - name: Upload macOS package
+      uses: actions/upload-artifact@v3
+      with:
+        name: macos-package
+        path: out/make/*.zip
+        if-no-files-found: error
+
+  create-release:
+    needs: [build-windows, build-mac]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Download all artifacts
+      uses: actions/download-artifact@v3
+      
+    - name: Create Release
+      id: create_release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: Pip-Boy Desktop Environment
+        tag_name: v${{ github.run_number }}
+        draft: false
+        prerelease: false
+        files: |
+          windows-installer/*.exe
+          macos-package/*.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
