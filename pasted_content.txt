@@ -1,0 +1,223 @@
+Icon Description: A simplified joystick or gamepad silhouette, or a grid pattern with one square highlighted, suggesting a selection.
+
+Office Suite (MS Office/LibreOffice):
+
+Name: ADMINISTRATIVE DATA PROCESSOR
+
+Icon Description: A stylized document icon (rectangle with a folded corner) with a simple 'A' or a pencil icon overlaid.
+
+Image Editor (Photoshop/GIMP):
+
+Name: OPTICAL DATA MANIPULATOR
+
+Icon Description: A simplified representation of an eye, or a camera lens aperture.
+
+C. [ FILES ] Module (Data/File Access)
+This module provides access to the user's file system. Replaces "MAP."
+
+Quick Access Entries:
+
+A list of common locations, stylized as directory paths:
+
+C:\USERS\[USERNAME]\DOCUMENTS
+
+C:\USERS\[USERNAME]\DOWNLOADS
+
+C:\USERS\[USERNAME]\PICTURES
+
+C:\USERS\[USERNAME]\VAULT_MUSIC (Music)
+
+C:\USERS\[USERNAME]\HOLOTAPES (Videos)
+
+Each entry is selectable to navigate to that directory.
+
+File and Folder Display:
+
+Layout: A two-pane view. Left pane shows the directory tree (collapsible folders). Right pane shows the contents of the selected folder.
+
+List Style: Files and folders are listed vertically. Each item shows:
+
+[Type Icon] FILENAME.EXT SIZE DATE MODIFIED
+
+Folder Icons: A simple, blocky folder silhouette.
+
+File Icons: Generic icons based on file type (e.g., a page for documents, a film strip for videos, a gear for executables), all in the monochrome Pip-Boy style.
+
+Navigation: Standard "Up one level," "Back," "Forward" buttons, stylized as chunky Pip-Boy buttons.
+
+D. [ DATA ] Module (Notes, Tasks, Logs)
+This module is for quick notes, to-do lists, and system logs/messages.
+
+Notes/Tasks Area ("PERSONAL LOGS"):
+
+Visual: A large text area that looks like a terminal input/output screen.
+
+Functionality: Simple text editing. Users can type notes directly.
+
+Tasks: Checkboxes ([ ] or [X]) can be used for to-do items. Completed items might get a strikethrough or a different highlight.
+
+Styling: Text appears as if typed on a terminal. A blinking cursor indicates the input point. Saved notes are listed, perhaps with timestamps.
+
+System Log Viewer ("SYSTEM ACTIVITY LOG"):
+
+A separate section or sub-tab displaying recent system events or notifications in a chronological, terminal-like list.
+
+[10:48:05] SYSTEM: Network connection established.
+
+[10:49:12] APPS: "VAULT-TEC DATALINK BROWSER" launched.
+
+E. [ MEDIA ] Module (Music/Video Playback)
+Replaces "RADIO" for broader media control.
+
+Music Player ("AUDIO TRANSMITTER"):
+
+Interface: Displays current track, artist, album. Controls for Play/Pause, Next/Previous, Volume (slider or knob graphic).
+
+Visuals: Track info in Pip-Boy font. Progress bar for the track. Volume could be a horizontal bar or a visual knob.
+
+Library Access: A list or browser for the music library, similar to the [FILES] module but filtered for audio files.
+
+Video Player ("VISUAL ARCHIVES PLAYER"):
+
+Launches videos in a dedicated Pip-Boy styled window or integrates playback within the module if feasible.
+
+Basic playback controls.
+
+F. [ CONFIG ] Module (Settings/Configuration)
+For customizing the Pip-Boy desktop experience and accessing system settings.
+
+Desktop Theme Settings:
+
+COLOR SCHEME: [ GREEN | AMBER | WHITE ] (Selectable options, perhaps with radio buttons or a rotary switch graphic).
+
+SCANLINE INTENSITY: [ LOW | MEDIUM | HIGH ] (Slider).
+
+CRT EFFECT: [ ON | OFF ] (Toggle switch).
+
+AUDIO FEEDBACK (UI Sounds): [ ON | OFF ]
+
+Module Configuration:
+
+Allow users to show/hide certain elements within STATS (e.g., hide weather if not desired).
+
+Customize quick access folders in [FILES].
+
+System Settings Link:
+
+A button/entry like ACCESS SYSTEM CORE SETTINGS (WINDOWS/MACOS/LINUX) that opens the native OS settings panel. This link would be styled as a Pip-Boy button.
+
+3. Interaction & Animation (Conceptual)
+Interactions should feel tactile and responsive, fitting the retro-tech theme.
+
+Hover Effects:
+
+Highlighting: When hovering over a selectable item (button, list entry, tab), it brightens slightly, or its border glows more intensely.
+
+Subtle Flicker: A very quick, faint flicker on the element.
+
+Informational Tooltips: Small, Pip-Boy styled pop-ups appearing near the cursor, displaying additional information (e.g., full file name, app description) in the Pip-Boy font.
+
+Click Feedback:
+
+Visual Change: Buttons depress visually. Selected items might get a persistent highlighted border or background.
+
+Sound (Conceptual):
+
+Click: A satisfying, mechanical "clunk" or "tick" sound.
+
+Module Switch: A "whoosh-static" sound or a screen degaussing sound.
+
+Confirmation/Action: A short, positive "bleep" or "chime."
+
+Error/Warning: A distinct, slightly jarring "buzz" or negative tone.
+
+Module Switching:
+
+When clicking a main navigation tab (STATS, APPS, etc.):
+
+Scanline Pass: A bright horizontal line quickly sweeps down the screen as the new module's content loads in.
+
+Screen Refresh Feel: A brief moment of "static" or a quick fade-out/fade-in effect for the content area.
+
+The selected tab becomes brighter or more prominent.
+
+4. Notification System
+Notifications must be integrated seamlessly into the Pip-Boy aesthetic.
+
+Style: Small, rectangular pop-up windows with the Pip-Boy border style and monochrome color scheme.
+
+Location: Appear in a consistent corner (e.g., bottom-right or top-right).
+
+Content:
+
+[App Icon (Pip-Boy style)] NOTIFICATION TITLE
+
+Brief message text...
+
+Small "Dismiss" or "Open App" buttons, also styled.
+
+Alternative: Scrolling Ticker:
+
+A dedicated narrow horizontal bar at the bottom or top of the screen where notifications scroll by, like a news ticker.
+
+INCOMING MESSAGE: [SENDER] - COMM-RELAY TERMINAL
+
+DOWNLOAD COMPLETE: wasteland_survival_guide.pdf - ARCHIVAL SYSTEM ACCESS
+
+Log: All notifications are also logged in the [DATA] module's "SYSTEM ACTIVITY LOG."
+
+5. Customization Considerations (Optional but Recommended)
+Empowering the user to personalize their Pip-Boy enhances the experience.
+
+Color Theme Switching: As mentioned in [CONFIG], users should be able to easily switch between Green, Amber, and White themes. The change should apply globally.
+
+Module Content Customization:
+
+Ability to add/remove/reorder specific widgets within the [STATS] module (e.g., different system monitors, clocks).
+
+Custom categories in the [APPS] module.
+
+Custom quick access links in [FILES].
+
+Sound Scheme Customization: Allow users to toggle UI sounds on/off or even select different sound packs (if going very deep into customization).
+
+"Boot-up" Sequence: A conceptual idea where, upon starting the computer, a short Pip-Boy boot animation plays (e.g., RobCo Industries logo, system check text scrolling by) before the desktop appears.
+
+Sketches/Concept Descriptions of Key Interface Elements
+(Descriptive, as actual drawing is not possible here)
+
+Main Screen Layout:
+Imagine your monitor is the Pip-Boy screen.
+
+Outer Frame: A dark, thick border with rounded corners, perhaps with subtle bolt/rivet graphics or textured lines suggesting the Pip-Boy's casing. Small, non-functional dial graphics could be in the corners.
+
+Tabs: A row of chunky, rectangular tabs across the top (e.g., [ STATS ] [ APPS ] [ FILES ] [ DATA ] [ MEDIA ] [ CONFIG ]). The active tab is brighter and might appear slightly raised.
+
+Content Area: Below the tabs, the main area displays the content of the active module. This area has a subtle CRT curvature and scanlines.
+
+Status Bar (Optional): A thin bar at the very bottom could show persistent info like current time, network status, or unread notification count, styled like a thin LED strip.
+
+App Launcher Interface ([APPS] Module):
+
+Left Pane (Categories): A vertical list of categories (e.g., COMMUNICATIONS, DATA PROCESSING). Each category label is in the Pip-Boy font. The selected category is highlighted (brighter text or a bracket > marker).
+
+Right Pane (Applications): A scrollable list of applications within the selected category. Each entry:
+[Icon] APPLICATION NAME (Pip-Boy Stylized)
+    (Original App Name: e.g., Google Chrome)
+The icon is a 32x32 or 48x48 pixel monochrome silhouette. The application name is in a larger Pip-Boy font. The original name (optional) is smaller, below it. Hovering an app highlights the entire row.
+
+Specific App Icon Examples (Detailed Descriptions):
+
+VAULT-TEC DATALINK BROWSER (Browser):
+
+A 2D silhouette of a CRT monitor screen, but instead of a blank screen, it shows three stylized horizontal lines representing text or data. An alternative is a simple outline of Earth with a single orbit line around it and a small dot representing a satellite.
+
+GALAXY NEWS RADIO (PERSONAL FEED) (Music Player):
+
+A classic, old-fashioned microphone on a stand, viewed from the side, rendered in simple blocky lines. Or, a pair of headphones, also in a very simplified, chunky outline.
+
+ARCHIVAL SYSTEM ACCESS (File Manager):
+
+A front view of a single filing cabinet drawer. It's a rectangle with a smaller rectangle on top representing the label area, and a simple horizontal bar for the handle. All lines are thick and monochrome.
+
+This Pip-Boy desktop concept aims for a balance of authentic Fallout immersion and practical, everyday usability, transforming the mundane desktop into an engaging piece of the wasteland.
